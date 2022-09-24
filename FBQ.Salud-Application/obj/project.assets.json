@@ -811,6 +811,37 @@
             "rid": "win"
           }
         }
+      },
+      "FBQ.Salud-AccessData/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "FBQ.Salud-Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/FBQ.Salud-AccessData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FBQ.Salud-AccessData.dll": {}
+        }
+      },
+      "FBQ.Salud-Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
+        },
+        "compile": {
+          "bin/placeholder/FBQ.Salud-Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FBQ.Salud-Domain.dll": {}
+        }
       }
     }
   },
@@ -2062,11 +2093,23 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "FBQ.Salud-AccessData/1.0.0": {
+      "type": "project",
+      "path": "../FBQ.Salud-AccessData/FBQ.Salud-AccessData.csproj",
+      "msbuildProject": "../FBQ.Salud-AccessData/FBQ.Salud-AccessData.csproj"
+    },
+    "FBQ.Salud-Domain/1.0.0": {
+      "type": "project",
+      "path": "../FBQ.Salud-Domain/FBQ.Salud-Domain.csproj",
+      "msbuildProject": "../FBQ.Salud-Domain/FBQ.Salud-Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+      "FBQ.Salud-AccessData >= 1.0.0",
+      "FBQ.Salud-Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.8",
@@ -2107,7 +2150,14 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
+              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj"
+            },
+            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -22,6 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FBQ.Salud-AccessData\FBQ.Salud-AccessData.csproj" />
     <ProjectReference Include="..\FBQ.Salud-Domain\FBQ.Salud-Domain.csproj" />
   </ItemGroup>
 

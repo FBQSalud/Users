@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FBQ.Salud_Application.Services;
 using FBQ.Salud_Domain.Dtos;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,14 +7,14 @@ namespace FBQ.Salud_AccessData.Controllers
 {
     public class UsersController
     {
-        [ApiController]
         [Route("api/users")]
+        [ApiController]       
         public class UserController : ControllerBase
         {
-            private readonly IUsersServices _service;
+            private readonly IUserServices _service;
             private readonly IMapper _mapper;
 
-            public UserController(IUsersService service, IMapper mapper)
+            public UserController(IUserServices service, IMapper mapper)
             {
                 _service = service;
                 _mapper = mapper;
@@ -40,13 +41,13 @@ namespace FBQ.Salud_AccessData.Controllers
             {
                 try
                 {
-                    var usuario = _service.GetUserById(id);
-                    var usuarioMapped = _mapper.Map<UserDto>(usuario);
-                    if (usuario == null)
+                    var user = _service.GetUserById(id);
+                    var userMapped = _mapper.Map<UserDto>(user);
+                    if (user == null)
                     {
                         return NotFound("Usuario Inexistente");
                     }
-                    return Ok(usuarioMapped);
+                    return Ok(userMapped);
                 }
                 catch (Exception e)
                 {
@@ -55,16 +56,16 @@ namespace FBQ.Salud_AccessData.Controllers
             }
 
             [HttpPost]
-            public IActionResult CreateUser([FromForm] UserDto usuario)
+            public IActionResult CreateUser([FromForm] UserDto user)
             {
                 try
                 {
-                    var usuarioEntidad = _service.CreateUser(usuario);
+                    var userEntity = _service.CreateUser(user);
 
-                    if (usuarioEntidad != null)
+                    if (userEntity != null)
                     {
-                        var userCreado = _mapper.Map<UserDto>(usuarioEntidad);
-                        return Ok("Usuario creado");
+                        var UserCreated = _mapper.Map<UserDto>(userEntity);
+                        return Ok("User Created");
                     }
 
                     return BadRequest();
@@ -108,14 +109,14 @@ namespace FBQ.Salud_AccessData.Controllers
             {
                 try
                 {
-                    var usuario = _service.GetUserById(id);
+                    var user = _service.GetUserById(id);
 
-                    if (usuario == null)
+                    if (user == null)
                     {
                         return NotFound("Usuario Inexistente");
                     }
 
-                    _service.Delete(usuario);
+                    _service.Delete(user);
                     return Ok("Usuario eliminado");
                 }
                 catch (Exception e)

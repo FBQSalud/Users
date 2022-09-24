@@ -812,21 +812,6 @@
           }
         }
       },
-      "FBQ.Salud-Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
-          "Microsoft.EntityFrameworkCore": "6.0.8",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.8"
-        },
-        "compile": {
-          "bin/placeholder/FBQ.Salud-Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FBQ.Salud-Application.dll": {}
-        }
-      },
       "FBQ.Salud-Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2093,11 +2078,6 @@
         "version.txt"
       ]
     },
-    "FBQ.Salud-Application/1.0.0": {
-      "type": "project",
-      "path": "../FBQ.Salud-Application/FBQ.Salud-Application.csproj",
-      "msbuildProject": "../FBQ.Salud-Application/FBQ.Salud-Application.csproj"
-    },
     "FBQ.Salud-Domain/1.0.0": {
       "type": "project",
       "path": "../FBQ.Salud-Domain/FBQ.Salud-Domain.csproj",
@@ -2107,7 +2087,6 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
-      "FBQ.Salud-Application >= 1.0.0",
       "FBQ.Salud-Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.8",
@@ -2150,9 +2129,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\FBQ.Salud - Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj": {
-              "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\FBQ.Salud - Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj"
-            },
             "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
               "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
             }

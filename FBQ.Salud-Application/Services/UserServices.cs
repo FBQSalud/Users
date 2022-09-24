@@ -56,4 +56,3 @@ namespace FBQ.Salud_Application.Services
         }
     }
 }
-
