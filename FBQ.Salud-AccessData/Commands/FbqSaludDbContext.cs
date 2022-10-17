@@ -1,4 +1,6 @@
-﻿using FBQ.Salud_Domain.Entities;
+﻿
+using FBQ.Salud_Application.Models;
+using FBQ.Salud_Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FBQ.Salud_AccessData.Commands
@@ -15,5 +17,6 @@ namespace FBQ.Salud_AccessData.Commands
         }
 
         public virtual DbSet<User> Users { get; set; }
+        public virtual DbSet<Rol> Roles { get; set; }
     }
 }

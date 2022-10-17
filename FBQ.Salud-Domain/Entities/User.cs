@@ -1,4 +1,5 @@
 ﻿
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 
@@ -6,7 +7,8 @@ namespace FBQ.Salud_Domain.Entities
 {
     public class User
     {
-        public int UserId { get; set; }
+        [Key]
+        public int Id { get; set; }
         [Required]
         public string UserName { get; set; }
         [Required]
@@ -20,7 +22,13 @@ namespace FBQ.Salud_Domain.Entities
         public string TypeOfEmployee { get; set; }
         [StringLength(255)]
         public string Email { get; set; }
-        public bool SoftDelete { get; set; } = false;
-
+        public int RolesId { get; set; }
+        [Required]
+        public DateTime ModifiedAt { get; set; }
+        [Required]
+        [DefaultValue(false)]
+        public bool IsDeleted { get; set; }
+        public DateTime DeletedAt { get; set; }
+        public Rol Roles { get; set; }
     }
 }
