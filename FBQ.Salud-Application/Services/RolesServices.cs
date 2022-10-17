@@ -46,7 +46,7 @@ namespace FBQ.Salud_Application.Services
             var rol = _userRepository.GetById(id);
             if (rol.Result != null)
             {
-                return rol;
+                //return rol;
             }
             throw new Exception("Rol null");
         }

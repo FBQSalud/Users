@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FBQ.Salud_Application.Models.DTOs;
 using FBQ.Salud_Domain.Dtos;
 using FBQ.Salud_Domain.Entities;
 

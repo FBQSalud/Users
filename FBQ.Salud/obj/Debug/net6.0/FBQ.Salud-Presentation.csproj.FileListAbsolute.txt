@@ -152,7 +152,6 @@ C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.AssemblyInfoInputs.cache
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.AssemblyInfo.cs
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.csproj.CoreCompileInputs.cache
-C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets.development.json
@@ -164,3 +163,6 @@ C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.genruntimeconfig.cache
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\obj\Debug\net6.0\ref\FBQ.Salud-Presentation.dll
 C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\bin\Debug\net6.0\SendGrid.dll
+C:\Users\casto\Downloads\2do Cuatri 2022\Proyecto Software\TP-Grupal\Backend\FBQ.Salud - Users\FBQ.Salud\bin\Debug\net6.0\StarkbankEcdsa.dll
