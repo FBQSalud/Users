@@ -1,192 +1,175 @@
 ﻿
 using AutoMapper;
-using FBQ.Salud_Application.Helper;
-using FBQ.Salud_Application.Interfaces;
-using FBQ.Salud_Application.Models;
-using FBQ.Salud_Application.Models.DTOs;
-using FBQ.Salud_Application.Models.Enums;
+using FBQ.Salud_Application.Validations;
 using FBQ.Salud_Domain.Commands;
 using FBQ.Salud_Domain.Dtos;
 using FBQ.Salud_Domain.Entities;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Configuration;
-using System.Security.Claims;
+using FBQ.Salud_Domain.Queries;
 
 namespace FBQ.Salud_Application.Services
 {
-    public interface IUsersServices
-    {
-        Task<IEnumerable<User>> GetAll(bool listEntity);
-        Task<Response<UserOutDTO>> GetMe();
+    public interface IUserServices
+    { 
+        Task<List<UserRequest>> GetAll();
+        Task<UserRequest> GetUserById(int id);
+        Task<Response> Update(int id, UserPut user);
+        Task<Response>Delete(int userId);
+        Task<Response> CreateUser(UserRequest user);
     }
-    public class UsersServices : IUsersServices
+    public class UsersServices : IUserServices
     {
-        private readonly IEmailServices _emailService;
-        private readonly IConfiguration _configuration;
-        private readonly IHttpContextAccessor _accessor;
-        private readonly IEntityMapper _entityMapper;
-        private readonly IJwtTokenProvider _jwtTokenProvider;
-        private readonly IUserRepository _userRepository;
+        private readonly IUserCommand _userCommand;
+        private readonly IUserQuery _userQuery;
         private readonly IMapper _mapper;
-
-        public UsersServices(IUserRepository userRepository,
-            IMapper mapper,
-            IJwtTokenProvider jwtTokenProvider,
-            IEntityMapper entityMapper,
-            IHttpContextAccessor accessor,
-            IConfiguration configuration,
-            IEmailServices emailService)
+        private readonly IUserValidatorExist _userValidation;
+        public UsersServices(IUserCommand userCommand,IUserQuery userQuery,
+            IMapper mapper,IUserValidatorExist userValidation)
         {
-            _userRepository = userRepository;
+            _userCommand = userCommand;
+            _userQuery = userQuery;
             _mapper = mapper;
-            _jwtTokenProvider = jwtTokenProvider;
-            _entityMapper = entityMapper;
-            _accessor = accessor;
-            _configuration = configuration;
-            _emailService = emailService;
+            _userValidation = userValidation;
+        }
+        public async Task<List<UserRequest>> GetAll()
+        {
+            var users = await _userQuery.GetListUser();
+
+            var usersMapeados = _mapper.Map<List<UserRequest>>(users);
+
+            return usersMapeados;
         }
 
-        public async Task<Response<string>> DeleteUser(int id)
+        public async Task<UserRequest> GetUserById(int id)
         {
-            try
-            {
-                await _userRepository.DeleteUser(id);
-            }
-            catch (InvalidOperationException e)
-            {
-                return new Response<string>("Error", succeeded: false, message: e.Message);
-            }
-            return new Response<string>("Succes", message: "Entity Deleted");
+            var user = await _userQuery.GetUserByIdAsync(id);
+
+            var userMappeado = _mapper.Map<UserRequest>(user);
+
+            return userMappeado;
         }
 
-        public Task<IEnumerable<User>> GetAll(bool listEntity)
+        public async Task<Response> CreateUser(UserRequest user)
         {
-            return _userRepository.GetAll(listEntity);
-        }
+            var userMapped = _mapper.Map<User>(user);
 
-        public async Task<Response<UserOutDTO>> GetMe()
-        {
-            if (_accessor.HttpContext != null)
+            if (await _userValidation.ExisteUserAsync(userMapped) || await _userValidation.ExisteEmailAsync(userMapped))
             {
-                var id = int.Parse(_accessor.HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier));
-
-                var entity = await _userRepository.GetById(id);
-
-                var entityDto = _entityMapper.UserToUserOutDTO(entity);
-
-                return new Response<UserOutDTO>(entityDto);
-            }
-
-            return null;
-        }
-
-        public Task<User> GetUser(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task<IEnumerable<UserDto>> GetUsers(bool listEntity)
-        {
-            try
-            {
-                var listUserAll = await _userRepository.GetAll(listEntity);
-
-                return listUserAll.Select(user => _entityMapper.UserToUserDto(user)).ToList();
-            }
-            catch (Exception e)
-            {
-                throw;
-            }
-        }
-
-        public async Task<Response<string>> InsertUser(RegisterDto registerDto)
-        {
-            var response = new Response<string>();
-            try
-            {
-                var ListUsers = _userRepository.GetAll(true).Result;
-                if (ListUsers != null)
+                await _userCommand.Add(userMapped);
+                return new Response
                 {
-                    if (!Exist(ListUsers, registerDto.Email))
+                    Success = true,
+                    Message = "Exito",
+                    Result = user
+                };
+            }
+            else
+            {
+                var userExistente = await _userQuery.GetUserByDNIAsync(userMapped.DNI);
+                if (userExistente.SoftDelete==true)
+                {
+                    userExistente.SoftDelete = false;
+                    await _userCommand.Update(userExistente);
+
+                    var userMap = _mapper.Map<UserRequest>(userExistente);
+                    return new Response
                     {
-                        var registeredUser = _entityMapper.RegisterDtoToUser(registerDto);
-
-                        registeredUser.Password = EncryptSha256.Encrypt(registeredUser.Password);
-
-                        registeredUser.RolesId = RoleTypes.Regular;
-
-                        try
-                        {
-                            var entity = await _userRepository.AddAsync(registeredUser);
-
-                            var user = await _userRepository.GetById(entity.Id, "Roles");
-
-                            var subject = "Confirmación de registro";
-
-                            var body = $"Bienvenido {user.UserName} {user.Picture}";
-
-                            await _emailService.Send(user.Email, _configuration.GetSection("emailContacto").Value, subject, body);
-
-                            var token = _jwtTokenProvider.CreateJwtToken(user);
-                            response.Data = token.Result;
-                            response.Message = "token return";
-                            response.Succeeded = true;
-                        }
-                        catch (Exception)
-                        {
-
-                            throw;
-                        }
-                    }
-                    else
+                        Success = true,
+                        Message = "Empleado con dni " + user.DNI + " activado",
+                        Result = userMap
+                    };
+                }
+                else
+                    return new Response
                     {
-                        response.Message = "Ya existe un usuario con ese email.";
-                        response.Succeeded = false;
-                    }
+                        Success = false,
+                        Message = "Existe un empleado con dni " + user.DNI + " o email "+ user.Email,
+                        Result = ""
+                    };
+            }
+        }
+
+        public async Task<Response> Update(int id, UserPut user)
+        {
+            var userUpdate = await _userQuery.GetUserByIdAsync(id);
+
+            var userMapped = _mapper.Map<User>(user);
+
+            if (userUpdate!=null && await _userValidation.ExisteUserAsync(userMapped))
+            {
+                _mapper.Map(user, userUpdate);
+
+                await _userCommand.Update(userUpdate);
+
+
+                return new Response
+                {
+                    Success = true,
+                    Message = "empleado modificado",
+                    Result = user
+                };
+            }
+            else
+            {
+
+                if (await _userValidation.ExisteUserAsync(userMapped) || await _userValidation.ExisteEmailAsync(userMapped))
+                {
+                    return new Response
+                    {
+                        Success = false,
+                        Message = "Usuario con dni o email existente",
+                        Result = user
+                    };
+                }
+                return new Response
+                {
+                    Success = false,
+                    Message = "empleado con id " + id + " inexistente",
+                    Result = ""
+                };
+            }
+        }
+
+        public async Task<Response> Delete(int userId)
+        {
+            var user = await _userQuery.GetUserByIdAsync(userId);
+
+            if (user!=null)
+            {
+                if (user.SoftDelete==true)
+                {
+                    return new Response
+                    {
+                        Success = false,
+                        Message = "Usuario inexistente",
+                        Result = ""
+                    };
                 }
                 else
                 {
-                    response.Message = "El campo email no puede quedar vacio.";
-                    response.Succeeded = false;
+                    user.SoftDelete = true;
+
+                    await _userCommand.Update(user);
+
+                    var userMappeo = _mapper.Map<UserResponse>(user);
+
+                    return new Response
+                    {
+                        Success = true,
+                        Message = "Usuario eliminado",
+                        Result = userMappeo
+                    };
                 }
             }
-            catch (Exception)
+            else
             {
-                throw;
+                return new Response
+                {
+                    Success = false,
+                    Message = "Empleado con id " + userId + " inexistente",
+                    Result = " "
+                };
             }
-
-            return response;
-        }
-
-        public async Task<Response<UserOutDTO>> UpdateUserAsync(int id, RegisterDto update)
-        {
-            try
-            {
-                var userId = await _userRepository.GetById(id);
-                if (userId == null)
-                    return new Response<UserOutDTO>(null, false, null, "Entity Not Found");
-
-                var user = _entityMapper.RegisterDtoToUser(update, userId);
-
-                await _userRepository.Update(user);
-                var userResponse = _entityMapper.UserToUserOutDTO(user);
-                return new Response<UserOutDTO>(userResponse, true, null, "Success!");
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-        }
-
-        public bool Exist(IEnumerable<User> users, string email)
-        {
-            var exist = users.Where(user => user.Email == email).FirstOrDefault();
-            if (exist != null)
-            {
-                return true;
-            }
-
-            return false;
+            
         }
     }
 }

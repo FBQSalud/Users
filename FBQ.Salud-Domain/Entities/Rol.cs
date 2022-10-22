@@ -1,23 +1,17 @@
-﻿
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace FBQ.Salud_Domain.Entities
 {
-    public class Rol 
+    public class Rol
     {
-        [Key]
-        public int Id { get; set; }
-        [Required]
-        [StringLength(255)]
+        public int RolId { get; set; }
         public string Name { get; set; }
-        [StringLength(255)]
-        public string? Description { get; set; }
-        public DateTime ModifiedAt { get; set; }
-        [Required]
-        [DefaultValue(false)]
-        public bool IsDeleted { get; set; }
-        public DateTime DeletedAt { get; set; }
+        public Admin Admin { get; set; }
+        //public User User { get; set; }
         public ICollection<User> Users { get; set; }
     }
 }

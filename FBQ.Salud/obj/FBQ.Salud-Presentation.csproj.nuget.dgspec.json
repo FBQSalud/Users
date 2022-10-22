@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud\\FBQ.Salud-Presentation.csproj": {}
+    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud\\FBQ.Salud-Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
+    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj",
         "projectName": "FBQ.Salud-AccessData",
-        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj",
+        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj",
         "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\obj\\",
+        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-AccessData\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -34,8 +34,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
               }
             }
           }
@@ -53,6 +53,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -77,6 +81,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -99,14 +115,14 @@
         }
       }
     },
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj": {
+    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj",
         "projectName": "FBQ.Salud-Application",
-        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj",
+        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj",
         "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Application\\obj\\",
+        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -129,11 +145,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj"
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj"
               },
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
               }
             }
           }
@@ -151,6 +167,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -176,9 +196,17 @@
               "target": "Package",
               "version": "[6.0.8, )"
             },
-            "SendGrid": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[9.28.1, )"
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
@@ -201,14 +229,14 @@
         }
       }
     },
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
         "projectName": "FBQ.Salud-Domain",
-        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
+        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
         "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Domain\\obj\\",
+        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -247,103 +275,9 @@
               "target": "Package",
               "version": "[11.0.0, )"
             },
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[6.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Design": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[6.0.8, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud\\FBQ.Salud-Presentation.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud\\FBQ.Salud-Presentation.csproj",
-        "projectName": "FBQ.Salud-Presentation",
-        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud\\FBQ.Salud-Presentation.csproj",
-        "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\casto\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj"
-              },
-              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj": {
-                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud - Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-              "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.2.2, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -375,7 +309,125 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud\\FBQ.Salud-Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud\\FBQ.Salud-Presentation.csproj",
+        "projectName": "FBQ.Salud-Presentation",
+        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud\\FBQ.Salud-Presentation.csproj",
+        "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\casto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj"
+              },
+              "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj": {
+                "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.2.2, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.4.0, )"
             }
           },
           "imports": [
