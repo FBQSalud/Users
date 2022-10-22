@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {}
+    "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+    "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
+        "projectUniqueName": "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
         "projectName": "FBQ.Salud-Domain",
-        "projectPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
-        "packagesPath": "C:\\Users\\casto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\casto\\Downloads\\2do Cuatri 2022\\Proyecto Software\\TP-Grupal\\Backend\\FBQ.Salud -Users\\FBQ.Salud-Domain\\obj\\",
+        "projectPath": "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
+        "packagesPath": "C:\\Users\\LopezFranco\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\casto\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\LopezFranco\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,8 +91,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -107,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

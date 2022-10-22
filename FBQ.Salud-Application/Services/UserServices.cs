@@ -10,8 +10,8 @@ namespace FBQ.Salud_Application.Services
 {
     public interface IUserServices
     { 
-        Task<List<UserRequest>> GetAll();
-        Task<UserRequest> GetUserById(int id);
+        Task<List<UserResponse>> GetAll();
+        Task<UserResponse> GetUserById(int id);
         Task<Response> Update(int id, UserPut user);
         Task<Response>Delete(int userId);
         Task<Response> CreateUser(UserRequest user);
@@ -30,20 +30,20 @@ namespace FBQ.Salud_Application.Services
             _mapper = mapper;
             _userValidation = userValidation;
         }
-        public async Task<List<UserRequest>> GetAll()
+        public async Task<List<UserResponse>> GetAll()
         {
             var users = await _userQuery.GetListUser();
 
-            var usersMapeados = _mapper.Map<List<UserRequest>>(users);
+            var usersMapeados = _mapper.Map<List<UserResponse>>(users);
 
             return usersMapeados;
         }
 
-        public async Task<UserRequest> GetUserById(int id)
+        public async Task<UserResponse> GetUserById(int id)
         {
             var user = await _userQuery.GetUserByIdAsync(id);
 
-            var userMappeado = _mapper.Map<UserRequest>(user);
+            var userMappeado = _mapper.Map<UserResponse>(user);
 
             return userMappeado;
         }
@@ -52,7 +52,7 @@ namespace FBQ.Salud_Application.Services
         {
             var userMapped = _mapper.Map<User>(user);
 
-            if (await _userValidation.ExisteUserAsync(userMapped) || await _userValidation.ExisteEmailAsync(userMapped))
+            if ((await _userValidation.ExisteUserAsync(userMapped)) && (await _userValidation.ExisteEmailAsync(userMapped)))
             {
                 await _userCommand.Add(userMapped);
                 return new Response
@@ -70,7 +70,7 @@ namespace FBQ.Salud_Application.Services
                     userExistente.SoftDelete = false;
                     await _userCommand.Update(userExistente);
 
-                    var userMap = _mapper.Map<UserRequest>(userExistente);
+                    var userMap = _mapper.Map<UserResponse>(userExistente);
                     return new Response
                     {
                         Success = true,
