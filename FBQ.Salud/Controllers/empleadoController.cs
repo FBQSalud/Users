@@ -24,10 +24,28 @@ namespace FBQ.Salud_AccessData.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<dynamic> GetAll()
         {
             try
             {
+                var identity = HttpContext.User.Identity as ClaimsIdentity;
+
+                var rToken = _rolService.ValidarToken(identity);
+
+                if (!rToken.Success) return rToken;
+
+                User admin = (User)rToken.Result;
+
+                if (admin.RolId != 1)
+                {
+                    return new Response
+                    {
+                        Success = false,
+                        Message = "No tienes permiso para ver la lista de empleados ",
+                        Result = ""
+                    };
+                }
+
                 var users = await _service.GetAll();
 
                 if (users.Count() == 0)
@@ -48,17 +66,38 @@ namespace FBQ.Salud_AccessData.Controllers
 
         [HttpGet]
         [Route("id")]
-        public async Task<IActionResult> GetById(int id)
+        public async Task<dynamic> GetById(int id)
         {
             try
             {
+                var identity = HttpContext.User.Identity as ClaimsIdentity;
+
+                var rToken = _rolService.ValidarToken(identity);
+
+                if (!rToken.Success) return rToken;
+
+                User admin = (User)rToken.Result;
+
+                if (admin.RolId != 1)
+                {
+                    return new Response
+                    {
+                        Success = false,
+                        Message = "No tienes permiso para buscar empleados ",
+                        Result = ""
+                    };
+                }
                 var user = await _service.GetUserById(id);
 
 
                 if (user == null)
                 {
-                    string json = JsonSerializer.Serialize("Cliente con id " + id + " inexistente");
-                    return new JsonResult(json) { StatusCode = 404 };
+                    return new Response
+                    {
+                        Success = false,
+                        Message = "empleados con id "+ id +" inexistente",
+                        Result = ""
+                    };
                 }
                 else
                     return Ok(user);
@@ -70,10 +109,27 @@ namespace FBQ.Salud_AccessData.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser([FromForm] UserRequest user)
+        public async Task<dynamic> CreateUser([FromForm] UserRequest user)
         {
             try
             {
+                var identity = HttpContext.User.Identity as ClaimsIdentity;
+
+                var rToken = _rolService.ValidarToken(identity);
+
+                if (!rToken.Success) return rToken;
+
+                User admin = (User)rToken.Result;
+
+                if (admin.RolId != 1)
+                {
+                    return new Response
+                    {
+                        Success = false,
+                        Message = "No tienes permiso para crear empleados ",
+                        Result = ""
+                    };
+                }
 
                 var userNuevo = await _service.CreateUser(user);
 
@@ -94,10 +150,27 @@ namespace FBQ.Salud_AccessData.Controllers
 
         [HttpPut]
         [Route("id")]
-        public async Task<IActionResult> UpdateUser(int id, UserPut user)
+        public async Task<dynamic> UpdateUser(int id, UserPut user)
         {
             try
             {
+                var identity = HttpContext.User.Identity as ClaimsIdentity;
+
+                var rToken = _rolService.ValidarToken(identity);
+
+                if (!rToken.Success) return rToken;
+
+                User admin = (User)rToken.Result;
+
+                if (admin.RolId != 1)
+                {
+                    return new Response
+                    {
+                        Success = false,
+                        Message = "No tienes permiso para modificar empleados ",
+                        Result = ""
+                    };
+                }
 
                 var UserResponse = await _service.Update(id, user);
 
@@ -129,14 +202,14 @@ namespace FBQ.Salud_AccessData.Controllers
 
                 if (!rToken.Success) return rToken;
 
-                Admin admin = (Admin)rToken.Result;
+                User admin = (User)rToken.Result;
 
                 if (admin.RolId != 1)
                 {
                     return new Response
                     {
                         Success = false,
-                        Message = "No tienes permiso para eliminar clientes: ",
+                        Message = "No tienes permiso para eliminar empleados ",
                         Result = ""
                     };
                 }
