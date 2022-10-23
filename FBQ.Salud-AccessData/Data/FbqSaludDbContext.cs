@@ -31,7 +31,7 @@ namespace FBQ.Salud_AccessData.Data
                 Password="admin",
                 EmployeeId= 1,
                 Picture="",
-                SoftDelete=false,
+                SoftDelete=true,
                 RolId=1
             });
             modelBuilder.Entity<Rol>().HasData(
