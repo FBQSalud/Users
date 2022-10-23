@@ -64,7 +64,9 @@ namespace FBQ.Salud_Application.Services
             }
             else
             {
+
                 var userExistente = await _userQuery.GetUserByDNIAsync(userMapped.DNI);
+
                 if (userExistente.SoftDelete==true)
                 {
                     userExistente.SoftDelete = false;

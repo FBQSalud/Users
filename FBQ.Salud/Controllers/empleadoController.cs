@@ -223,6 +223,7 @@ namespace FBQ.Salud_AccessData.Controllers
                 }
                 else
                     return Ok(user);
+                    //return NoContent();
                   
             }
             catch (Exception)

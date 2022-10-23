@@ -139,7 +139,7 @@ namespace FBQ.Salud_AccessData.Migrations
                             Password = "admin",
                             Picture = "",
                             RolId = 1,
-                            SoftDelete = false,
+                            SoftDelete = true,
                             UserName = "admin"
                         });
                 });
