@@ -34,7 +34,7 @@ namespace FBQ.Salud_AccessData.Queries
 
         public async Task<User> GetUserByIdAsync(int UserId)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.UserId == UserId);
+            var user = await _context.Users.FirstOrDefaultAsync(x => x.UserId == UserId && x.SoftDelete==false);
             return user;
         }
     }
