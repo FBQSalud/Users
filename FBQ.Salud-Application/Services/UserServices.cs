@@ -119,7 +119,7 @@ namespace FBQ.Salud_Application.Services
                     {
                         Success = false,
                         Message = "Usuario con dni o email existente",
-                        Result = user
+                        Result = ""
                     };
                 }
                 return new Response

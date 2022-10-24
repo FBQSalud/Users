@@ -9,11 +9,8 @@ namespace FBQ.Salud_Domain.Dtos
 {
     public class UserPut
     {
-        public int UserId { get; set; }
         [Required]
         public string UserName { get; set; }
-        [Required]
-        public string DNI { get; set; }
         [Required]
         public string Picture { get; set; }
         [StringLength(30)]
