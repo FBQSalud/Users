@@ -66,3 +66,20 @@ C:\Users\LopezFranco\Desktop\FBQ_Salud\Users\FBQ.Salud-AccessData\obj\Debug\net6
 C:\Users\LopezFranco\Desktop\FBQ_Salud\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.pdb
 C:\Users\LopezFranco\Desktop\FBQ_Salud\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.genruntimeconfig.cache
 C:\Users\LopezFranco\Desktop\FBQ_Salud\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\ref\FBQ.Salud-AccessData.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\bin\Debug\net6.0\FBQ.Salud-AccessData.deps.json
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\bin\Debug\net6.0\FBQ.Salud-AccessData.runtimeconfig.json
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\bin\Debug\net6.0\FBQ.Salud-AccessData.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\bin\Debug\net6.0\FBQ.Salud-AccessData.pdb
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\bin\Debug\net6.0\FBQ.Salud-Domain.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\bin\Debug\net6.0\FBQ.Salud-Domain.pdb
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.csproj.AssemblyReference.cache
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.GeneratedMSBuildEditorConfig.editorconfig
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.AssemblyInfoInputs.cache
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.AssemblyInfo.cs
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.csproj.CoreCompileInputs.cache
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.csproj.CopyComplete
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\refint\FBQ.Salud-AccessData.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.pdb
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.genruntimeconfig.cache
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\ref\FBQ.Salud-AccessData.dll

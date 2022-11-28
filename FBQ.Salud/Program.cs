@@ -93,7 +93,7 @@ builder.Services.AddTransient<IAdminQuery, AdminQuery>();
 builder.Services.AddCors(c =>
 {
     c.AddPolicy("AllowOrigin", options => options
-                                                .AllowAnyOrigin()
+                                               .AllowAnyOrigin()
                                                 .AllowAnyMethod()
                                                 .AllowAnyHeader());
 });
@@ -107,6 +107,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseCors(options =>
+{
+    options.AllowAnyMethod();
+    options.AllowAnyHeader();
+    options.AllowAnyOrigin();
+});
 app.UseHttpsRedirection();
 
 app.UseAuthentication();            

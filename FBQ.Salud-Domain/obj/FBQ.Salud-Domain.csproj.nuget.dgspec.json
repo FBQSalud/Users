@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {}
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
+        "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
         "projectName": "FBQ.Salud-Domain",
-        "projectPath": "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
-        "packagesPath": "C:\\Users\\LopezFranco\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LopezFranco\\Desktop\\FBQ_Salud\\Users\\FBQ.Salud-Domain\\obj\\",
+        "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
+        "packagesPath": "C:\\Users\\Sun Tzu\\.nuget\\packages\\",
+        "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LopezFranco\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sun Tzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -91,7 +91,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -100,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
