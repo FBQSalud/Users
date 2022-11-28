@@ -11,7 +11,7 @@ namespace FBQ.Salud_AccessData.Controllers
 {
     [Route("api/users")]
     [ApiController]
-    [Authorize]
+    // [Authorize]
     public class empleadoController : ControllerBase
     {
         private readonly IUserServices _service;
@@ -28,8 +28,7 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
-                var identity = HttpContext.User.Identity as ClaimsIdentity;
-
+            /*
                 var rToken = _rolService.ValidarToken(identity);
 
                 if (!rToken.Success) return rToken;
@@ -45,7 +44,7 @@ namespace FBQ.Salud_AccessData.Controllers
                         Result = ""
                     };
                 }
-
+             */
                 var users = await _service.GetAll();
 
                 if (users.Count() == 0)
@@ -70,8 +69,7 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
-                var identity = HttpContext.User.Identity as ClaimsIdentity;
-
+               /*
                 var rToken = _rolService.ValidarToken(identity);
 
                 if (!rToken.Success) return rToken;
@@ -87,6 +85,7 @@ namespace FBQ.Salud_AccessData.Controllers
                         Result = ""
                     };
                 }
+               */
                 var user = await _service.GetUserById(id);
 
 
@@ -113,24 +112,15 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
+                /*
                 var identity = HttpContext.User.Identity as ClaimsIdentity;
 
                 var rToken = _rolService.ValidarToken(identity);
-
+               
                 if (!rToken.Success) return rToken;
 
                 User admin = (User)rToken.Result;
-
-                if (admin.RolId != 1)
-                {
-                    return new Response
-                    {
-                        Success = false,
-                        Message = "No tienes permiso para crear empleados ",
-                        Result = ""
-                    };
-                }
-
+                */
                 var userNuevo = await _service.CreateUser(user);
 
                 if (userNuevo.Success)
@@ -154,14 +144,8 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
-                var identity = HttpContext.User.Identity as ClaimsIdentity;
-
-                var rToken = _rolService.ValidarToken(identity);
-
-                if (!rToken.Success) return rToken;
-
-                User admin = (User)rToken.Result;
-
+               
+                /*
                 if (admin.RolId != 1)
                 {
                     return new Response
@@ -171,7 +155,7 @@ namespace FBQ.Salud_AccessData.Controllers
                         Result = ""
                     };
                 }
-
+                */
                 var UserResponse = await _service.Update(id, user);
 
                 if (UserResponse.Success)
@@ -196,14 +180,7 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
-                var identity = HttpContext.User.Identity as ClaimsIdentity;
-
-                var rToken = _rolService.ValidarToken(identity);
-
-                if (!rToken.Success) return rToken;
-
-                User admin = (User)rToken.Result;
-
+              /*
                 if (admin.RolId != 1)
                 {
                     return new Response
@@ -213,7 +190,7 @@ namespace FBQ.Salud_AccessData.Controllers
                         Result = ""
                     };
                 }
-
+              */
 
                 var user = await _service.Delete(id);
 
