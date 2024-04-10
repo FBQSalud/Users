@@ -2714,19 +2714,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sun Tzu\\.nuget\\packages\\": {}
+    "C:\\Users\\Onihori\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj",
+      "projectUniqueName": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj",
       "projectName": "FBQ.Salud-AccessData",
-      "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj",
-      "packagesPath": "C:\\Users\\Sun Tzu\\.nuget\\packages\\",
-      "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-AccessData\\obj\\",
+      "projectPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj",
+      "packagesPath": "C:\\Users\\Onihori\\.nuget\\packages\\",
+      "outputPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-AccessData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Sun Tzu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Onihori\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2740,8 +2740,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
-              "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
+            "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+              "projectPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
             }
           }
         }
@@ -2750,6 +2750,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2817,7 +2822,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

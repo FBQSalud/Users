@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FBQ.Salud-Presentation.props" />
+</Project>

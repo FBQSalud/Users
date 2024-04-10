@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\FBQ.Salud-Presentation.props" />
+</Project>

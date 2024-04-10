@@ -93,3 +93,23 @@ E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-Applic
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.pdb
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.genruntimeconfig.cache
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\ref\FBQ.Salud-Application.dll
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Application.deps.json
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Application.runtimeconfig.json
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Application.dll
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Application.pdb
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-AccessData.dll
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Domain.dll
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-AccessData.pdb
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Domain.pdb
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.csproj.AssemblyReference.cache
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.AssemblyInfoInputs.cache
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.AssemblyInfo.cs
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.csproj.CoreCompileInputs.cache
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.sourcelink.json
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salu.B6894334.Up2Date
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.dll
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\refint\FBQ.Salud-Application.dll
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.pdb
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.genruntimeconfig.cache
+C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\ref\FBQ.Salud-Application.dll
