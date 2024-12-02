@@ -1,0 +1,438 @@
+{
+  "format": 1,
+  "restore": {
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Tests\\Tests.csproj": {}
+  },
+  "projects": {
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Application\\Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\Onihori\\.nuget\\packages\\",
+        "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Onihori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Domain\\Domain.csproj": {
+                "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Onihori\\.nuget\\packages\\",
+        "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Onihori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Infraestructure\\Infraestructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Infraestructure\\Infraestructure.csproj",
+        "projectName": "Infraestructure",
+        "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Infraestructure\\Infraestructure.csproj",
+        "packagesPath": "C:\\Users\\Onihori\\.nuget\\packages\\",
+        "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Infraestructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Onihori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Application\\Application.csproj": {
+                "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Application\\Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "Microsoft.AspNet.Identity.Core": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.Extensions.Identity.Core": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Presentation\\Presentation.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Presentation\\Presentation.csproj",
+        "projectName": "Presentation",
+        "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\Onihori\\.nuget\\packages\\",
+        "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Presentation\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Onihori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Infraestructure\\Infraestructure.csproj": {
+                "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Infraestructure\\Infraestructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Tests\\Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Tests\\Tests.csproj",
+        "projectName": "Tests",
+        "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Tests\\Tests.csproj",
+        "packagesPath": "C:\\Users\\Onihori\\.nuget\\packages\\",
+        "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Onihori\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Application\\Application.csproj": {
+                "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Application\\Application.csproj"
+              },
+              "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Presentation\\Presentation.csproj": {
+                "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Based Repos\\Furro_Mantecoso_SexyRP\\Presentation\\Presentation.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.9.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "NUnit.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

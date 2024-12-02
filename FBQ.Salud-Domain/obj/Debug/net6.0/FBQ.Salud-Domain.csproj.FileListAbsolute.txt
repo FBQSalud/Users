@@ -83,3 +83,4 @@ C:\Based Repos\FBQ\Users\FBQ.Salud-Domain\obj\Debug\net6.0\refint\FBQ.Salud-Doma
 C:\Based Repos\FBQ\Users\FBQ.Salud-Domain\obj\Debug\net6.0\FBQ.Salud-Domain.pdb
 C:\Based Repos\FBQ\Users\FBQ.Salud-Domain\obj\Debug\net6.0\FBQ.Salud-Domain.genruntimeconfig.cache
 C:\Based Repos\FBQ\Users\FBQ.Salud-Domain\obj\Debug\net6.0\ref\FBQ.Salud-Domain.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-Domain\obj\Debug\net6.0\FBQ.Salud-Domain.sourcelink.json

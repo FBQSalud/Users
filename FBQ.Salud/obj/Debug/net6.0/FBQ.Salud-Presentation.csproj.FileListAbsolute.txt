@@ -384,7 +384,6 @@ E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\De
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets.build.json
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets.development.json
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\scopedcss\bundle\FBQ.Salud-Presentation.styles.css
-E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.csproj.CopyComplete
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.dll
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\refint\FBQ.Salud-Presentation.dll
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.pdb
@@ -470,3 +469,20 @@ C:\Based Repos\FBQ\Users\FBQ.Salud\obj\Debug\net6.0\refint\FBQ.Salud-Presentatio
 C:\Based Repos\FBQ\Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.pdb
 C:\Based Repos\FBQ\Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.genruntimeconfig.cache
 C:\Based Repos\FBQ\Users\FBQ.Salud\obj\Debug\net6.0\ref\FBQ.Salud-Presentation.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salud-Presentation.sourcelink.json
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets\msbuild.FBQ.Salud-Presentation.Microsoft.AspNetCore.StaticWebAssets.props
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets\msbuild.build.FBQ.Salud-Presentation.props
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.FBQ.Salud-Presentation.props
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.FBQ.Salud-Presentation.props
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\staticwebassets.pack.json
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\obj\Debug\net6.0\FBQ.Salu.5DD2CEA7.Up2Date
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\NUnit3.TestAdapter.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\NUnit3.TestAdapter.pdb
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\nunit.engine.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\nunit.engine.api.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\nunit.engine.core.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\testcentric.engine.metadata.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\Castle.Core.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\Moq.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\nunit.framework.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud\bin\Debug\net6.0\nunit.framework.legacy.dll

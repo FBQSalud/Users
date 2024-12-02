@@ -77,7 +77,6 @@ E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-Access
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.AssemblyInfoInputs.cache
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.AssemblyInfo.cs
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.csproj.CoreCompileInputs.cache
-E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.csproj.CopyComplete
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.dll
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\refint\FBQ.Salud-AccessData.dll
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.pdb
@@ -101,3 +100,5 @@ C:\Based Repos\FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\refint\FBQ.Salud-
 C:\Based Repos\FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.pdb
 C:\Based Repos\FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.genruntimeconfig.cache
 C:\Based Repos\FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\ref\FBQ.Salud-AccessData.dll
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salud-AccessData.sourcelink.json
+E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-AccessData\obj\Debug\net6.0\FBQ.Salu.BFB38113.Up2Date

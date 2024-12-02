@@ -12,12 +12,12 @@ namespace FBQ.Salud_AccessData.Controllers
     [Route("api/users")]
     [ApiController]
     // [Authorize]
-    public class empleadoController : ControllerBase
+    public class EmpleadoController : ControllerBase
     {
         private readonly IUserServices _service;
         private readonly IRolService _rolService;
 
-        public empleadoController(IUserServices service, IMapper mapper, IRolService rolService)
+        public EmpleadoController(IUserServices service, IMapper mapper, IRolService rolService)
         {
             _service = service;
             _rolService = rolService;

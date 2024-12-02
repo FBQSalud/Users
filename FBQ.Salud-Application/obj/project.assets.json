@@ -2746,11 +2746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj",
+      "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj",
       "projectName": "FBQ.Salud-Application",
-      "projectPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj",
+      "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Application\\FBQ.Salud-Application.csproj",
       "packagesPath": "C:\\Users\\Onihori\\.nuget\\packages\\",
-      "outputPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Application\\obj\\",
+      "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Onihori\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2767,11 +2767,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
-              "projectPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj"
+            "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj": {
+              "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj"
             },
-            "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
-              "projectPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
+            "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+              "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj"
             }
           }
         }

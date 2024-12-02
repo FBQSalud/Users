@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {}
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {}
   },
   "projects": {
-    "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
+    "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
+        "projectUniqueName": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
         "projectName": "FBQ.Salud-Domain",
-        "projectPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
+        "projectPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj",
         "packagesPath": "C:\\Users\\Onihori\\.nuget\\packages\\",
-        "outputPath": "C:\\Based Repos\\FBQ\\Users\\FBQ.Salud-Domain\\obj\\",
+        "outputPath": "E:\\COSAS IMPORTANTES\\PS\\segundo cuatri\\Microservicios FBQ\\Users\\FBQ.Salud-Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Onihori\\AppData\\Roaming\\NuGet\\NuGet.Config",
