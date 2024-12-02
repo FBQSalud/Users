@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("FBQ.Salud-Domain")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("FBQ.Salud-Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+958d52a4c8bffe646449ef61bfc490d26867f3ff")]
-[assembly: System.Reflection.AssemblyProductAttribute("FBQ.Salud-Domain")]
-[assembly: System.Reflection.AssemblyTitleAttribute("FBQ.Salud-Domain")]
+[assembly: System.Reflection.AssemblyProductAttribute("FBQ.Salud-Tests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("FBQ.Salud-Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
