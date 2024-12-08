@@ -9,6 +9,7 @@ namespace FBQ.Salud_Domain.Entities
         public int UserId { get; set; }
         public string UserName { get; set; }
         public string DNI { get; set; }
+        public DateTime FechaAlta { get; set; }
         public string Password { get; set; }
         public int EmployeeId { get; set; }
         public string Picture { get; set; }

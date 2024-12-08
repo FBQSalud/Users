@@ -30,4 +30,8 @@
     <ProjectReference Include="..\FBQ.Salud-Domain\FBQ.Salud-Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

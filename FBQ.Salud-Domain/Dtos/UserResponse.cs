@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace FBQ.Salud_Domain.Dtos
+﻿namespace FBQ.Salud_Domain.Dtos
 {
     public class UserResponse
     {
@@ -12,6 +6,8 @@ namespace FBQ.Salud_Domain.Dtos
         public string DNI { get; set; }
         public int EmployeeId { get; set; }
         public string Email { get; set; }
+        public DateTime FechaAlta { get; set; }
+        public string Picture { get; set; }
         public bool SoftDelete { get; set; } = false;
         public int RolId { get; set; }
     }
