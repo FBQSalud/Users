@@ -1,8 +1,10 @@
-﻿using FBQ.Salud_Application.Services;
+﻿using AutoMapper;
+using FBQ.Salud_Application.Services;
 using FBQ.Salud_Domain.Dtos;
-using Microsoft.AspNetCore.Authorization;
+using FBQ.Salud_Domain.Entities;
+using FBQ.Salud_Domain.Utilities;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json;
+using Microsoft.IdentityModel.Tokens;
 
 namespace FBQ.Salud_Presentation.Controllers
 {
@@ -11,35 +13,147 @@ namespace FBQ.Salud_Presentation.Controllers
     public class adminController : ControllerBase
     {
         public readonly IRolService _rolService;
-        public adminController(IRolService rolService)
+        private readonly IUserServices _userService;
+        private readonly IMapper _mapper;
+        public adminController(IRolService rolService, IUserServices userService, IMapper mapper)
         {
-            _rolService=rolService;
+            _rolService = rolService;
+            _userService = userService;
+            _mapper = mapper;   
         }
 
         [HttpPost]
         [Route("login")]
-        public async Task <IActionResult> Login([FromBody]AdminRequest optData)
+        public async Task<IActionResult> Login([FromBody] AdminRequest optData)
         {
             try
             {
-
-                string email = optData.Email.ToString();
-
-                string password = optData.Password.ToString();
-
-                var loginn = await _rolService.LoginUser(email, password);
-
-                if (loginn.Success == false)
+                // Validar que los datos no estén vacíos
+                if (string.IsNullOrWhiteSpace(optData.Email) || string.IsNullOrWhiteSpace(optData.Password))
                 {
-                    return NotFound(loginn);
-
+                    return BadRequest(new
+                    {
+                        success = false,
+                        message = "El email y la contraseña son obligatorios"
+                    });
                 }
-                    return Ok(loginn);
-            }
-            catch (Exception)
-            {
 
-                return BadRequest();
+                // Intentar autenticar al usuario
+                var loginResponse = await _rolService.LoginUser(optData.Email, optData.Password);
+
+                if (!loginResponse.Success)
+                {
+                    // Credenciales incorrectas
+                    return Unauthorized(new
+                    {
+                        success = false,
+                        message = "Usuario o contraseña incorrectos"
+                    });
+                }
+
+                // Autenticación exitosa
+                return Ok(new
+                {
+                    success = true,
+                    message = "Inicio de sesión exitoso",
+                    token = loginResponse.Result // Aquí estaría el token generado
+                });
+            }
+            catch (Exception ex)
+            {
+                // Capturar y devolver errores inesperados
+                return StatusCode(StatusCodes.Status500InternalServerError, new
+                {
+                    success = false,
+                    message = "Ocurrió un error en el servidor",
+                    error = ex.Message
+                });
+            }
+        }
+
+        [HttpPost]
+        [Route("forgot-password")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordRequest request)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(request.Email))
+                {
+                    return BadRequest(new { message = "El correo electrónico es obligatorio." });
+                }
+
+                // Verificar si el correo está registrado
+                var userResponse = await _userService.GetUserByEmailAsync(request.Email);
+                if (userResponse == null)
+                {
+                    return NotFound(new { message = "No se encontró una cuenta asociada a este correo." });
+                }
+
+                // Mapear de UserResponse a User
+                var userEntity = _mapper.Map<User>(userResponse);
+
+                // Generar un token para restablecer contraseña
+                var resetToken = await _rolService.GeneratePasswordResetTokenAsync(userEntity);
+
+                // Devolver el token directamente al frontend
+                return Ok(new
+                {
+                    message = "Token generado exitosamente.",
+                    resetToken = resetToken
+                });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Hubo un error al procesar tu solicitud: {ex.Message}" });
+            }
+        }
+
+        [HttpPost]
+        [Route("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordRequest request)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(request.Token) || string.IsNullOrEmpty(request.NewPassword))
+                {
+                    return BadRequest(new { message = "El token y la nueva contraseña son obligatorios." });
+                }
+
+                // Validar el token
+                var claimsPrincipal = await _rolService.ValidateResetToken(request.Token);
+
+                // Obtener el ID del usuario desde los claims
+                var userId = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == "id")?.Value;
+
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return BadRequest(new { message = "El token es inválido o ha expirado." });
+                }
+
+                // Buscar al usuario
+                var user = await _userService.GetUserById(int.Parse(userId));
+                if (user == null)
+                {
+                    return NotFound(new { message = "Usuario no encontrado." });
+                }
+
+                // Actualizar la contraseña del usuario
+                var userPut = new UserPut
+                {
+                    Password = PasswordUtils.HashPassword(request.NewPassword) // Usando el método de la clase PasswordUtils
+                };
+
+                await _userService.Update(user.UserId, userPut);
+
+                return Ok(new { message = "Contraseña restablecida exitosamente." });
+            }
+            catch (SecurityTokenException ex)
+            {
+                return BadRequest(new { message = $"El token es inválido o ha expirado: {ex.Message}" });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = $"Hubo un error al procesar tu solicitud: {ex.Message}" });
             }
         }
     }

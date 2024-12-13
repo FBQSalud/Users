@@ -15,6 +15,7 @@ namespace FBQ.Salud_Application.Services
         Task<Response> Update(int id, UserPut user);
         Task<Response>Delete(int userId);
         Task<Response> CreateUser(UserRequest user);
+        Task<UserResponse> GetUserByEmailAsync(string email);
     }
     public class UsersServices : IUserServices
     {
@@ -171,7 +172,22 @@ namespace FBQ.Salud_Application.Services
                     Result = " "
                 };
             }
-            
+        }
+        public async Task<UserResponse> GetUserByEmailAsync(string email)
+        {
+            // Buscar al usuario por correo
+            var user = await _userQuery.GetUserByEmailAsync(email);
+
+            // Verificar si no se encontró el usuario
+            if (user == null)
+            {
+                throw new KeyNotFoundException("Usuario no encontrado"); 
+            }
+
+            // Mapear el usuario encontrado a UserResponse
+            var userResponse = _mapper.Map<UserResponse>(user);
+
+            return userResponse;
         }
     }
 }

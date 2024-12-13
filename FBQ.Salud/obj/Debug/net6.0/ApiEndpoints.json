@@ -1,0 +1,159 @@
+[
+  {
+    "ContainingType": "FBQ.Salud_Presentation.Controllers.adminController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/admin/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FBQ.Salud_Domain.Entities.ForgotPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_Presentation.Controllers.adminController",
+    "Method": "Login",
+    "RelativePath": "api/admin/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "optData",
+        "Type": "FBQ.Salud_Domain.Dtos.AdminRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_Presentation.Controllers.adminController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/admin/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "FBQ.Salud_Domain.Entities.ResetPasswordRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_AccessData.Controllers.EmpleadoController",
+    "Method": "GetAll",
+    "RelativePath": "api/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_AccessData.Controllers.EmpleadoController",
+    "Method": "CreateUser",
+    "RelativePath": "api/users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DNI",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Password",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Picture",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmployeeId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "RolId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_AccessData.Controllers.EmpleadoController",
+    "Method": "DeleteCliente",
+    "RelativePath": "api/users/eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_AccessData.Controllers.EmpleadoController",
+    "Method": "GetById",
+    "RelativePath": "api/users/id",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "FBQ.Salud_AccessData.Controllers.EmpleadoController",
+    "Method": "UpdateUser",
+    "RelativePath": "api/users/id",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "user",
+        "Type": "FBQ.Salud_Domain.Dtos.UserPut",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

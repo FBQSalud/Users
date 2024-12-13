@@ -1,0 +1,113 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC686831-DEC2-4CF5-B030-C636571E6D73}|FBQ.Salud\\FBQ.Salud-Presentation.csproj|c:\\users\\casto\\downloads\\finales 2024\\fbq-salud\\microservicios\\users\\fbq.salud\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC686831-DEC2-4CF5-B030-C636571E6D73}|FBQ.Salud\\FBQ.Salud-Presentation.csproj|solutionrelative:fbq.salud\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D80D8C-6254-4632-937D-3DDD22698E62}|FBQ.Salud-Application\\FBQ.Salud-Application.csproj|c:\\users\\casto\\downloads\\finales 2024\\fbq-salud\\microservicios\\users\\fbq.salud-application\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D80D8C-6254-4632-937D-3DDD22698E62}|FBQ.Salud-Application\\FBQ.Salud-Application.csproj|solutionrelative:fbq.salud-application\\services\\userservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CAF252E-124C-4146-80E8-FF695628EB0E}|FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj|c:\\users\\casto\\downloads\\finales 2024\\fbq-salud\\microservicios\\users\\fbq.salud-domain\\queries\\iuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CAF252E-124C-4146-80E8-FF695628EB0E}|FBQ.Salud-Domain\\FBQ.Salud-Domain.csproj|solutionrelative:fbq.salud-domain\\queries\\iuserquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{62D80D8C-6254-4632-937D-3DDD22698E62}|FBQ.Salud-Application\\FBQ.Salud-Application.csproj|c:\\users\\casto\\downloads\\finales 2024\\fbq-salud\\microservicios\\users\\fbq.salud-application\\services\\rolservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{62D80D8C-6254-4632-937D-3DDD22698E62}|FBQ.Salud-Application\\FBQ.Salud-Application.csproj|solutionrelative:fbq.salud-application\\services\\rolservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4DEDBED5-5916-4699-B0A9-F806921BD4C1}|FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj|c:\\users\\casto\\downloads\\finales 2024\\fbq-salud\\microservicios\\users\\fbq.salud-accessdata\\queries\\userquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4DEDBED5-5916-4699-B0A9-F806921BD4C1}|FBQ.Salud-AccessData\\FBQ.Salud-AccessData.csproj|solutionrelative:fbq.salud-accessdata\\queries\\userquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "FBQ.Salud\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "FBQ.Salud\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAADwv4YAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T13:48:26.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IUserQuery.cs",
+              "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Domain\\Queries\\IUserQuery.cs",
+              "RelativeDocumentMoniker": "FBQ.Salud-Domain\\Queries\\IUserQuery.cs",
+              "ToolTip": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Domain\\Queries\\IUserQuery.cs",
+              "RelativeToolTip": "FBQ.Salud-Domain\\Queries\\IUserQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:57:34.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserServices.cs",
+              "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Application\\Services\\UserServices.cs",
+              "RelativeDocumentMoniker": "FBQ.Salud-Application\\Services\\UserServices.cs",
+              "ToolTip": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Application\\Services\\UserServices.cs",
+              "RelativeToolTip": "FBQ.Salud-Application\\Services\\UserServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:39:28.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RolServices.cs",
+              "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Application\\Services\\RolServices.cs",
+              "RelativeDocumentMoniker": "FBQ.Salud-Application\\Services\\RolServices.cs",
+              "ToolTip": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Application\\Services\\RolServices.cs",
+              "RelativeToolTip": "FBQ.Salud-Application\\Services\\RolServices.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAQwLAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T17:08:23.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserQuery.cs",
+              "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-AccessData\\Queries\\UserQuery.cs",
+              "RelativeDocumentMoniker": "FBQ.Salud-AccessData\\Queries\\UserQuery.cs",
+              "ToolTip": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-AccessData\\Queries\\UserQuery.cs",
+              "RelativeToolTip": "FBQ.Salud-AccessData\\Queries\\UserQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T16:57:19.12Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

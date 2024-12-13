@@ -5,6 +5,7 @@ using FBQ.Salud_Application.Services;
 using FBQ.Salud_Application.Validations;
 using FBQ.Salud_Domain.Commands;
 using FBQ.Salud_Domain.Queries;
+using FBQ.Salud_Domain.Utilities;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -22,6 +23,8 @@ builder.Services
         .AddControllers()
         .AddFluentValidation(c =>
         c.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly()));
+
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 //Fluent Validation
 builder.Services.AddValidatorsFromAssemblyContaining<UserValidation>();

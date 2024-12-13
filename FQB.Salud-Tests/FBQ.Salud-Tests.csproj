@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Microservicios FBQ\Users\FBQ.Salud-Application\FBQ.Salud-Application.csproj" />
-    <ProjectReference Include="..\..\..\Microservicios FBQ\Users\FBQ.Salud\FBQ.Salud-Presentation.csproj" />
+    <ProjectReference Include="..\..\..\Microservicios\Users\FBQ.Salud-Application\FBQ.Salud-Application.csproj" />
+    <ProjectReference Include="..\..\..\Microservicios\Users\FBQ.Salud\FBQ.Salud-Presentation.csproj" />
+    <ProjectReference Include="..\FBQ.Salud-Application\FBQ.Salud-Application.csproj" />
+    <ProjectReference Include="..\FBQ.Salud-Domain\FBQ.Salud-Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

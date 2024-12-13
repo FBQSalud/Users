@@ -114,3 +114,23 @@ C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Applic
 C:\Based Repos\FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\ref\FBQ.Salud-Application.dll
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.sourcelink.json
 E:\COSAS IMPORTANTES\PS\segundo cuatri\Microservicios FBQ\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salu.B6894334.Up2Date
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Application.deps.json
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Application.runtimeconfig.json
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Application.dll
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Application.pdb
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-AccessData.dll
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Domain.dll
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-AccessData.pdb
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\bin\Debug\net6.0\FBQ.Salud-Domain.pdb
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.csproj.AssemblyReference.cache
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.AssemblyInfoInputs.cache
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.AssemblyInfo.cs
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.csproj.CoreCompileInputs.cache
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.sourcelink.json
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salu.B6894334.Up2Date
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.dll
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\refint\FBQ.Salud-Application.dll
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.pdb
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\FBQ.Salud-Application.genruntimeconfig.cache
+C:\Users\casto\Downloads\Finales 2024\FBQ-Salud\Microservicios\Users\FBQ.Salud-Application\obj\Debug\net6.0\ref\FBQ.Salud-Application.dll

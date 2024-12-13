@@ -1,7 +1,4 @@
-﻿ 
-using System.ComponentModel.DataAnnotations;
-
-
+﻿
 namespace FBQ.Salud_Domain.Entities
 {
     public class User

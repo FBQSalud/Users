@@ -13,8 +13,9 @@ namespace FBQ.Salud_Application.Services
     public interface IRolService
     {
         Task<Response> LoginUser(string email, string password);
-
         Response ValidarToken(ClaimsIdentity identity);
+        Task<string> GeneratePasswordResetTokenAsync(User user);
+        Task<ClaimsPrincipal> ValidateResetToken(string token);
     }
     public class RolServices : IRolService
     {
@@ -111,6 +112,84 @@ namespace FBQ.Salud_Application.Services
                     Message = "Catch: " + ex.Message,
                     Result = ""
                 };
+            }
+        }
+
+        public async Task<string> GeneratePasswordResetTokenAsync(User user)
+        {
+            // Validar el usuario
+            if (user == null)
+            {
+                throw new ArgumentNullException(nameof(user), "El usuario no puede ser nulo.");
+            }
+
+            // Configuración del JWT
+            var jwt = _configuration.GetSection("Jwt").Get<Jwt>();
+
+            // Claims específicos para el restablecimiento de contraseña
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, jwt.Subject),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim("id", user.UserId.ToString()), // ID del usuario
+                new Claim("email", user.Email), // Email del usuario
+                new Claim("resetPassword", "true") // Claim para indicar que es un token de restablecimiento
+            };
+
+            // Generar la clave y las credenciales de firma
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwt.Key));
+            var signingCredentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha512);
+
+            // Crear el token
+            var token = new JwtSecurityToken(
+                jwt.Issuer,
+                jwt.Audience,
+                claims,
+                expires: DateTime.Now.AddMinutes(30), // Token válido por 30 minutos
+                signingCredentials: signingCredentials
+            );
+
+            // Devolver el token como string
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
+
+        public async Task<ClaimsPrincipal> ValidateResetToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]);
+
+            var validationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = new SymmetricSecurityKey(key),
+                ValidateIssuer = true,
+                ValidIssuer = _configuration["Jwt:Issuer"],
+                ValidateAudience = true,
+                ValidAudience = _configuration["Jwt:Audience"],
+                ValidateLifetime = true, // Validar que el token no haya expirado
+                ClockSkew = TimeSpan.Zero // Sin tolerancia para tiempos
+            };
+
+            try
+            {
+                // Declarar la variable validatedToken
+                SecurityToken validatedToken;
+
+                // Validar el token y obtener los claims
+                var principal = tokenHandler.ValidateToken(token, validationParameters, out validatedToken);
+
+                // Verificar que el token sea un JWT y contenga el propósito adecuado
+                if (validatedToken is JwtSecurityToken jwtToken &&
+                    jwtToken.Claims.Any(c => c.Type == "resetPassword" && c.Value == "true"))
+                {
+                    return principal;
+                }
+
+                throw new SecurityTokenException("El token no es válido para restablecer contraseña.");
+            }
+            catch (Exception ex)
+            {
+                throw new SecurityTokenException("El token es inválido o ha expirado.", ex);
             }
         }
     }

@@ -28,23 +28,6 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
-            /*
-                var rToken = _rolService.ValidarToken(identity);
-
-                if (!rToken.Success) return rToken;
-
-                User admin = (User)rToken.Result;
-
-                if (admin.RolId != 1)
-                {
-                    return new Response
-                    {
-                        Success = false,
-                        Message = "No tienes permiso para ver la lista de empleados ",
-                        Result = ""
-                    };
-                }
-             */
                 var users = await _service.GetAll();
 
                 if (users.Count() == 0)
