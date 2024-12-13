@@ -66,39 +66,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "UserName",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "DNI",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Password",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "Picture",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "EmployeeId",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "Email",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "RolId",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Name": "user",
+        "Type": "FBQ.Salud_Domain.Dtos.UserRequest",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

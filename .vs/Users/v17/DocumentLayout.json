@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BC686831-DEC2-4CF5-B030-C636571E6D73}|FBQ.Salud\\FBQ.Salud-Presentation.csproj|c:\\users\\casto\\downloads\\finales 2024\\fbq-salud\\microservicios\\users\\fbq.salud\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC686831-DEC2-4CF5-B030-C636571E6D73}|FBQ.Salud\\FBQ.Salud-Presentation.csproj|solutionrelative:fbq.salud\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC686831-DEC2-4CF5-B030-C636571E6D73}|FBQ.Salud\\FBQ.Salud-Presentation.csproj|c:\\users\\casto\\downloads\\finales 2024\\fbq-salud\\microservicios\\users\\fbq.salud\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BC686831-DEC2-4CF5-B030-C636571E6D73}|FBQ.Salud\\FBQ.Salud-Presentation.csproj|solutionrelative:fbq.salud\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -43,19 +47,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "empleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud\\Controllers\\empleadoController.cs",
+              "RelativeDocumentMoniker": "FBQ.Salud\\Controllers\\empleadoController.cs",
+              "ToolTip": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud\\Controllers\\empleadoController.cs",
+              "RelativeToolTip": "FBQ.Salud\\Controllers\\empleadoController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAvwEkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-13T21:12:58.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "FBQ.Salud\\Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud\\Controllers\\AdminController.cs",
               "RelativeToolTip": "FBQ.Salud\\Controllers\\AdminController.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAADwv4YAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAYwHsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-13T13:48:26.023Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IUserQuery.cs",
               "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Domain\\Queries\\IUserQuery.cs",
               "RelativeDocumentMoniker": "FBQ.Salud-Domain\\Queries\\IUserQuery.cs",
@@ -63,12 +80,11 @@
               "RelativeToolTip": "FBQ.Salud-Domain\\Queries\\IUserQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T16:57:34.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T16:57:34.29Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserServices.cs",
               "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Application\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "FBQ.Salud-Application\\Services\\UserServices.cs",
@@ -81,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RolServices.cs",
               "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-Application\\Services\\RolServices.cs",
               "RelativeDocumentMoniker": "FBQ.Salud-Application\\Services\\RolServices.cs",
@@ -94,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UserQuery.cs",
               "DocumentMoniker": "C:\\Users\\casto\\Downloads\\Finales 2024\\FBQ-Salud\\Microservicios\\Users\\FBQ.Salud-AccessData\\Queries\\UserQuery.cs",
               "RelativeDocumentMoniker": "FBQ.Salud-AccessData\\Queries\\UserQuery.cs",
@@ -102,8 +118,7 @@
               "RelativeToolTip": "FBQ.Salud-AccessData\\Queries\\UserQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T16:57:19.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-13T16:57:19.12Z"
             }
           ]
         }

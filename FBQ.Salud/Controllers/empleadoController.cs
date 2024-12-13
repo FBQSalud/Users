@@ -1,11 +1,7 @@
 ﻿using AutoMapper;
 using FBQ.Salud_Application.Services;
 using FBQ.Salud_Domain.Dtos;
-using FBQ.Salud_Domain.Entities;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
-using System.Text.Json;
 
 namespace FBQ.Salud_AccessData.Controllers
 {
@@ -52,23 +48,6 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
-               /*
-                var rToken = _rolService.ValidarToken(identity);
-
-                if (!rToken.Success) return rToken;
-
-                User admin = (User)rToken.Result;
-
-                if (admin.RolId != 1)
-                {
-                    return new Response
-                    {
-                        Success = false,
-                        Message = "No tienes permiso para buscar empleados ",
-                        Result = ""
-                    };
-                }
-               */
                 var user = await _service.GetUserById(id);
 
 
@@ -91,33 +70,36 @@ namespace FBQ.Salud_AccessData.Controllers
         }
 
         [HttpPost]
-        public async Task<dynamic> CreateUser([FromForm] UserRequest user)
+        public async Task<IActionResult> CreateUser([FromBody] UserRequest user)
         {
             try
             {
-                /*
-                var identity = HttpContext.User.Identity as ClaimsIdentity;
+                // Validar modelo recibido
+                if (!ModelState.IsValid)
+                {
+                    return BadRequest(ModelState);
+                }
 
-                var rToken = _rolService.ValidarToken(identity);
-               
-                if (!rToken.Success) return rToken;
-
-                User admin = (User)rToken.Result;
-                */
+                // Intentar crear el usuario
                 var userNuevo = await _service.CreateUser(user);
 
+                // Devolver respuesta basada en el resultado del servicio
                 if (userNuevo.Success)
                 {
-                    return new JsonResult(userNuevo) { StatusCode = 201 };
+                    return CreatedAtAction(nameof(CreateUser), null, userNuevo.Result);
                 }
                 else
                 {
-                    return new JsonResult(userNuevo) { StatusCode = 409 };
+                    return Conflict(new { message = userNuevo.Message }); // Código 409 con mensaje
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                return StatusCode(500, "Internal Server Error");
+                // Registrar el error para depuración
+                Console.Error.WriteLine(ex);
+
+                // Devolver respuesta genérica de error interno
+                return StatusCode(500, new { message = "Internal Server Error" });
             }
         }
 
@@ -126,19 +108,7 @@ namespace FBQ.Salud_AccessData.Controllers
         public async Task<dynamic> UpdateUser(int id, UserPut user)
         {
             try
-            {
-               
-                /*
-                if (admin.RolId != 1)
-                {
-                    return new Response
-                    {
-                        Success = false,
-                        Message = "No tienes permiso para modificar empleados ",
-                        Result = ""
-                    };
-                }
-                */
+            {           
                 var UserResponse = await _service.Update(id, user);
 
                 if (UserResponse.Success)
@@ -163,18 +133,6 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
-              /*
-                if (admin.RolId != 1)
-                {
-                    return new Response
-                    {
-                        Success = false,
-                        Message = "No tienes permiso para eliminar empleados ",
-                        Result = ""
-                    };
-                }
-              */
-
                 var user = await _service.Delete(id);
 
                 if (user.Success == false)

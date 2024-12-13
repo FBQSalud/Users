@@ -1,4 +1,5 @@
-﻿using FBQ.Salud_Application.Services;
+﻿using AutoMapper;
+using FBQ.Salud_Application.Services;
 using FBQ.Salud_Domain.Dtos;
 using FBQ.Salud_Presentation.Controllers;
 using Microsoft.AspNetCore.Mvc;
@@ -16,13 +17,24 @@ namespace FBQ.Salud_Presentation.Tests
     public class AdminControllerTests
     {
         private Mock<IRolService> _rolServiceMock;
+        private Mock<IUserServices> _userServiceMock;
+        private Mock<IMapper> _mapperMock;
         private adminController _adminController;
 
         [SetUp]
         public void SetUp()
         {
+            // Crear mocks para los servicios necesarios
             _rolServiceMock = new Mock<IRolService>();
-            _adminController = new adminController(_rolServiceMock.Object);
+            _userServiceMock = new Mock<IUserServices>();
+            _mapperMock = new Mock<IMapper>();
+
+            // Pasar los mocks al constructor del controlador
+            _adminController = new adminController(
+                _rolServiceMock.Object,
+                _userServiceMock.Object,
+                _mapperMock.Object
+            );
         }
 
         /// <summary>

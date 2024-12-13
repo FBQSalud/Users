@@ -115,65 +115,19 @@
         ],
         "requestBody": {
           "content": {
-            "multipart/form-data": {
+            "application/json": {
               "schema": {
-                "required": [
-                  "DNI",
-                  "EmployeeId",
-                  "Password",
-                  "UserName"
-                ],
-                "type": "object",
-                "properties": {
-                  "UserName": {
-                    "type": "string"
-                  },
-                  "DNI": {
-                    "type": "string"
-                  },
-                  "Password": {
-                    "type": "string"
-                  },
-                  "Picture": {
-                    "type": "string"
-                  },
-                  "EmployeeId": {
-                    "type": "integer",
-                    "format": "int32"
-                  },
-                  "Email": {
-                    "maxLength": 30,
-                    "minLength": 0,
-                    "type": "string"
-                  },
-                  "RolId": {
-                    "type": "integer",
-                    "format": "int32"
-                  }
-                }
-              },
-              "encoding": {
-                "UserName": {
-                  "style": "form"
-                },
-                "DNI": {
-                  "style": "form"
-                },
-                "Password": {
-                  "style": "form"
-                },
-                "Picture": {
-                  "style": "form"
-                },
-                "EmployeeId": {
-                  "style": "form"
-                },
-                "Email": {
-                  "style": "form"
-                },
-                "RolId": {
-                  "style": "form"
-                }
+                "$ref": "#/components/schemas/UserRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserRequest"
               }
             }
           }
@@ -333,6 +287,48 @@
           "password": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserRequest": {
+        "required": [
+          "dni",
+          "employeeId",
+          "password",
+          "userName"
+        ],
+        "type": "object",
+        "properties": {
+          "userName": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "dni": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "picture": {
+            "type": "string",
+            "nullable": true
+          },
+          "employeeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "email": {
+            "maxLength": 30,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "rolId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

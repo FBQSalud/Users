@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FBQ.Salud-Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9ec7452fc0059032020b94f83de071f84afdda7b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6eff6bb105e150ddd198c22d3cefc243a0ca8c69")]
 [assembly: System.Reflection.AssemblyProductAttribute("FBQ.Salud-Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FBQ.Salud-Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
