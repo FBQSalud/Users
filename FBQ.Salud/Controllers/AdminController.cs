@@ -28,7 +28,6 @@ namespace FBQ.Salud_Presentation.Controllers
         {
             try
             {
-                // Validar que los datos no estén vacíos
                 if (string.IsNullOrWhiteSpace(optData.Email) || string.IsNullOrWhiteSpace(optData.Password))
                 {
                     return BadRequest(new
@@ -38,12 +37,10 @@ namespace FBQ.Salud_Presentation.Controllers
                     });
                 }
 
-                // Intentar autenticar al usuario
                 var loginResponse = await _rolService.LoginUser(optData.Email, optData.Password);
 
                 if (!loginResponse.Success)
                 {
-                    // Credenciales incorrectas
                     return Unauthorized(new
                     {
                         success = false,
@@ -51,17 +48,15 @@ namespace FBQ.Salud_Presentation.Controllers
                     });
                 }
 
-                // Autenticación exitosa
                 return Ok(new
                 {
                     success = true,
                     message = "Inicio de sesión exitoso",
-                    token = loginResponse.Result // Aquí estaría el token generado
+                    token = loginResponse.Result 
                 });
             }
             catch (Exception ex)
             {
-                // Capturar y devolver errores inesperados
                 return StatusCode(StatusCodes.Status500InternalServerError, new
                 {
                     success = false,
@@ -82,20 +77,16 @@ namespace FBQ.Salud_Presentation.Controllers
                     return BadRequest(new { message = "El correo electrónico es obligatorio." });
                 }
 
-                // Verificar si el correo está registrado
                 var userResponse = await _userService.GetUserByEmailAsync(request.Email);
                 if (userResponse == null)
                 {
                     return NotFound(new { message = "No se encontró una cuenta asociada a este correo." });
                 }
 
-                // Mapear de UserResponse a User
                 var userEntity = _mapper.Map<User>(userResponse);
 
-                // Generar un token para restablecer contraseña
                 var resetToken = await _rolService.GeneratePasswordResetTokenAsync(userEntity);
 
-                // Devolver el token directamente al frontend
                 return Ok(new
                 {
                     message = "Token generado exitosamente.",
@@ -119,28 +110,23 @@ namespace FBQ.Salud_Presentation.Controllers
                     return BadRequest(new { message = "El token y la nueva contraseña son obligatorios." });
                 }
 
-                // Validar el token
                 var claimsPrincipal = await _rolService.ValidateResetToken(request.Token);
 
-                // Obtener el ID del usuario desde los claims
                 var userId = claimsPrincipal.Claims.FirstOrDefault(c => c.Type == "id")?.Value;
 
                 if (string.IsNullOrEmpty(userId))
                 {
                     return BadRequest(new { message = "El token es inválido o ha expirado." });
                 }
-
-                // Buscar al usuario
                 var user = await _userService.GetUserById(int.Parse(userId));
                 if (user == null)
                 {
                     return NotFound(new { message = "Usuario no encontrado." });
                 }
 
-                // Actualizar la contraseña del usuario
                 var userPut = new UserPut
                 {
-                    Password = PasswordUtils.HashPassword(request.NewPassword) // Usando el método de la clase PasswordUtils
+                    Password = PasswordUtils.HashPassword(request.NewPassword) 
                 };
 
                 await _userService.Update(user.UserId, userPut);

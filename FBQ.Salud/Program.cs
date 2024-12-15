@@ -17,7 +17,6 @@ using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services
         .AddControllers()
@@ -26,7 +25,6 @@ builder.Services
 
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-//Fluent Validation
 builder.Services.AddValidatorsFromAssemblyContaining<UserValidation>();
 builder.Services.AddValidatorsFromAssemblyContaining<UserPutValidation>();
 
@@ -40,9 +38,7 @@ builder.Services.AddDbContext<FbqSaludDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
     {
-        //Titulo
         c.SwaggerDoc("v1", new OpenApiInfo { Title = "Software Lion", Version = "v1" });
-        //Boton Authorize
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
             Description = "Jwt Authorization",
@@ -84,7 +80,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 });
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-//Repository
 builder.Services.AddTransient<IUserValidatorExist, UserValidatorExist>();
 builder.Services.AddTransient<IUserCommand, UsersCommand>();
 builder.Services.AddTransient<IUserQuery, UserQuery>();
@@ -92,7 +87,6 @@ builder.Services.AddTransient<IUserServices, UsersServices>();
 builder.Services.AddTransient<IRolService, RolServices>();
 builder.Services.AddTransient<IRolQuery, RolQuery>();
 builder.Services.AddTransient<IAdminQuery, AdminQuery>(); 
-//Cors
 builder.Services.AddCors(c =>
 {
     c.AddPolicy("AllowOrigin", options => options
@@ -103,7 +97,6 @@ builder.Services.AddCors(c =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

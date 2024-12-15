@@ -74,31 +74,25 @@ namespace FBQ.Salud_AccessData.Controllers
         {
             try
             {
-                // Validar modelo recibido
                 if (!ModelState.IsValid)
                 {
                     return BadRequest(ModelState);
                 }
 
-                // Intentar crear el usuario
                 var userNuevo = await _service.CreateUser(user);
 
-                // Devolver respuesta basada en el resultado del servicio
                 if (userNuevo.Success)
                 {
                     return CreatedAtAction(nameof(CreateUser), null, userNuevo.Result);
                 }
                 else
                 {
-                    return Conflict(new { message = userNuevo.Message }); // Código 409 con mensaje
+                    return Conflict(new { message = userNuevo.Message }); 
                 }
             }
             catch (Exception ex)
-            {
-                // Registrar el error para depuración
+            {             
                 Console.Error.WriteLine(ex);
-
-                // Devolver respuesta genérica de error interno
                 return StatusCode(500, new { message = "Internal Server Error" });
             }
         }
@@ -140,9 +134,7 @@ namespace FBQ.Salud_AccessData.Controllers
                     return new JsonResult(user) { StatusCode = 404 };
                 }
                 else
-                    return Ok(user);
-                    //return NoContent();
-                  
+                    return Ok(user);              
             }
             catch (Exception)
             {

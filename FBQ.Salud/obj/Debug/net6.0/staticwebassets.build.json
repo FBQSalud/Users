@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "pZIs7VfGD3NIFm6YvsDPZm8mmHZQ+AEVC+XzUsoByVI=",
+  "Hash": "PqWMjHRKEJE3VOSTe0hSvdmvj0gPmH+6sZEXf3LGn68=",
   "Source": "FBQ.Salud-Presentation",
   "BasePath": "_content/FBQ.Salud-Presentation",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

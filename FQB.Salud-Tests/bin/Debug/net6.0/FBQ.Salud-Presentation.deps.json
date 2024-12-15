@@ -615,10 +615,7 @@
           "Swashbuckle.AspNetCore.Swagger": "6.4.0"
         },
         "runtime": {
-          "FBQ.Salud-AccessData.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "FBQ.Salud-AccessData.dll": {}
         }
       },
       "FBQ.Salud-Application/1.0.0": {
@@ -635,10 +632,7 @@
           "Swashbuckle.AspNetCore.Swagger": "6.4.0"
         },
         "runtime": {
-          "FBQ.Salud-Application.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "FBQ.Salud-Application.dll": {}
         }
       },
       "FBQ.Salud-Domain/1.0.0": {
@@ -653,10 +647,7 @@
           "Swashbuckle.AspNetCore.Swagger": "6.4.0"
         },
         "runtime": {
-          "FBQ.Salud-Domain.dll": {
-            "assemblyVersion": "1.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "FBQ.Salud-Domain.dll": {}
         }
       }
     }

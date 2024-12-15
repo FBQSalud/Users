@@ -101,15 +101,12 @@ namespace FBQ.Salud_Presentation.Tests
         {
             // Arrange
             var userId = 1;
-
-            // Setting up the mock to return null for the user (no user found)
             _userServiceMock.Setup(x => x.GetUserById(userId)).ReturnsAsync((UserResponse)null);
 
             // Act
             var result = await _empleadoController.GetById(userId);
 
             // Assert
-            // Check if the result is a Response object and has Success == false and the expected message
             Assert.That(result, Is.InstanceOf<Response>());
             var response = result as Response;
             Assert.That(response.Success, Is.False);

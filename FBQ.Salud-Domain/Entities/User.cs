@@ -1,5 +1,4 @@
-﻿
-namespace FBQ.Salud_Domain.Entities
+﻿namespace FBQ.Salud_Domain.Entities
 {
     public class User
     {

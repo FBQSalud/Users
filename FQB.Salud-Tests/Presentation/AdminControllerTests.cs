@@ -24,12 +24,10 @@ namespace FBQ.Salud_Presentation.Tests
         [SetUp]
         public void SetUp()
         {
-            // Crear mocks para los servicios necesarios
             _rolServiceMock = new Mock<IRolService>();
             _userServiceMock = new Mock<IUserServices>();
             _mapperMock = new Mock<IMapper>();
 
-            // Pasar los mocks al constructor del controlador
             _adminController = new adminController(
                 _rolServiceMock.Object,
                 _userServiceMock.Object,
